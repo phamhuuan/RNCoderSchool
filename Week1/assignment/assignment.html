@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Number guessing</title>
+	</head>
+	<body>
+		<div>
+			<h1>Guess a number</h1>
+			<!-- input box -->
+			<input type="number" id="inputNumber">
+			<!-- guess button -->
+			<button id="guessButton" onclick="handleGuessBtnClick()">GUESS</button>
+			<!-- message text -->
+			<div id="message" style="width: fit-content"></div>
+			<!-- result text -->
+			<h1 id="result"></h1>
+		</div>
+	</body>
+	<script type="text/javascript">
+		// guess history
+		let pastGuess = "";
+		// total number of guessing turns
+		let count = 5;
+		// random a correct number
+		const correctNumber = getRandomInt(1,10);
+		// create a random number
+		function getRandomInt(min, max) {
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			return Math.floor(Math.random() * (max - min)) + min; 
+		}
+		// handle when click guess button
+		function handleGuessBtnClick() {
+			// get input value
+			const inputValue = parseInt(document.getElementById("inputNumber").value);
+			// if still have turns
+			if (count > 0) {
+				if (inputValue < correctNumber) {
+					count--
+					document.getElementById("message").style.background = "red";
+					document.getElementById("message").innerHTML = "Sorry your guess is too low. " + "You have " + count + " guesses left"
+				}
+				if (inputValue > correctNumber) {
+					count--;
+					document.getElementById("message").style.background = "red";
+					document.getElementById("message").innerHTML = "Sorry your guess is too high. " + "You have " + count + " guesses left"
+				}
+				if (inputValue == correctNumber) {
+					document.getElementById("message").style.background = "green";
+					document.getElementById("message").innerHTML = "Congratulations!! You guessed correctly."
+				}
+				pastGuess = pastGuess + inputValue + "<br>"
+				document.getElementById("result").innerHTML = pastGuess
+			} else {
+				document.getElementById("message").style.background = "red"
+				document.getElementById("message").innerHTML = "Game over! You have no guess."
+				document.getElementById("result").innerHTML = pastGuess
+			}
+		}
+	</script>
+</html>
