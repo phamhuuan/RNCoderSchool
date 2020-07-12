@@ -1,5 +1,5 @@
 {
-  "name": "Week2",
+  "name": "assignment",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.11.0",
-    "react-native": "0.62.2",
+    "react": "^16.11.0",
+    "react-native": "^0.62.2",
+    "react-native-masonry-list": "^2.16.1",
     "react-native-vector-icons": "^7.0.0"
   },
   "devDependencies": {

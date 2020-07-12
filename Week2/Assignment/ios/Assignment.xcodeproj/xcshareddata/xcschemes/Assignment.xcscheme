@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Week2.app"
-               BlueprintName = "Week2"
-               ReferencedContainer = "container:Week2.xcodeproj">
+               BuildableName = "Assignment.app"
+               BlueprintName = "Assignment"
+               ReferencedContainer = "container:Assignment.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Week2Tests.xctest"
-               BlueprintName = "Week2Tests"
-               ReferencedContainer = "container:Week2.xcodeproj">
+               BuildableName = "AssignmentTests.xctest"
+               BlueprintName = "AssignmentTests"
+               ReferencedContainer = "container:Assignment.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Week2.app"
-            BlueprintName = "Week2"
-            ReferencedContainer = "container:Week2.xcodeproj">
+            BuildableName = "Assignment.app"
+            BlueprintName = "Assignment"
+            ReferencedContainer = "container:Assignment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Week2.app"
-            BlueprintName = "Week2"
-            ReferencedContainer = "container:Week2.xcodeproj">
+            BuildableName = "Assignment.app"
+            BlueprintName = "Assignment"
+            ReferencedContainer = "container:Assignment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
