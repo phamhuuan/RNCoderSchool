@@ -2,7 +2,7 @@ import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Feather from 'react-native-vector-icons/Feather';
-import {View, Image, FlatList, Text, TouchableOpacity} from 'react-native';
+import {View, Image, FlatList, Text} from 'react-native';
 import pic1 from './assets/pic1.png';
 import pic2 from './assets/pic2.jpg';
 import pic3 from './assets/pic3.jpg';
@@ -74,7 +74,7 @@ function Item({name, image, likeCount, avatar}) {
     </View>
   );
 }
-export default function App2() {
+export default function App() {
   return (
     <View>
       {/*Header*/}
